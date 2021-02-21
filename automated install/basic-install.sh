@@ -47,14 +47,14 @@ EOM
 )
 
 # Location for final installation log storage
-installLogLoc=/etc/pihole/install.log
+installLogLoc=/etc/natasha/install.log
 # This is an important file as it contains information specific to the machine it's being installed on
-setupVars=/etc/pihole/setupVars.conf
-# Pi-hole uses lighttpd as a Web server, and this is the config file for it
+setupVars=/etc/natasha/setupVars.conf
+# N.A.T.A.S.H.A uses lighttpd as a Web server, and this is the config file for it
 # shellcheck disable=SC2034
 lighttpdConfig=/etc/lighttpd/lighttpd.conf
 # This is a file used for the colorized output
-coltable=/opt/pihole/COL_TABLE
+coltable=/opt/natasha/COL_TABLE
 
 # Root of the web server
 webroot="/var/www/html"
@@ -147,27 +147,8 @@ fi
 # This lets users know that it is a Pi-hole, LLC product
 show_ascii_berry() {
   echo -e "
-        ${COL_LIGHT_GREEN}.;;,.
-        .ccccc:,.
-         :cccclll:.      ..,,
-          :ccccclll.   ;ooodc
-           'ccll:;ll .oooodc
-             .;cll.;;looo:.
-                 ${COL_LIGHT_RED}.. ','.
-                .',,,,,,'.
-              .',,,,,,,,,,.
-            .',,,,,,,,,,,,....
-          ....''',,,,,,,'.......
-        .........  ....  .........
-        ..........      ..........
-        ..........      ..........
-        .........  ....  .........
-          ........,,,,,,,'......
-            ....',,,,,,,,,,,,.
-               .',,,,,,,,,'.
-                .',,,,,,'.
-                  ..'''.${COL_NC}
-"
+        N.A.T.A.S.H.A
+        "
 }
 
 is_command() {
