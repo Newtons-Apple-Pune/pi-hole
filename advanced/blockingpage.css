@@ -138,7 +138,6 @@ textarea, input, button { outline: none; }
 }
 
 body {
-  background: #dbdbdb url("/admin/img/boxed-bg.jpg") repeat fixed;
   color: #333;
   font: 1.4rem "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 2.2rem;
@@ -184,7 +183,6 @@ h1 a:hover, header #bpAlt:hover { background-color: rgba(0, 0, 0, 0.12); color: 
 header .spc { width: 100%; }
 
 header #bpAlt label {
-  background: url("/admin/img/logo.svg") no-repeat center left 15px;
   background-size: 15px 23px;
   padding: 0 15px;
   text-indent: 30px;
@@ -234,7 +232,6 @@ header #bpAlt label {
 }
 
 .aboutImg {
-  background: url("/admin/img/logo.svg") no-repeat center;
   background-size: 90px 90px;
   height: 90px;
   margin: 0 auto;
@@ -278,7 +275,6 @@ main {
 }
 
 #bpOutput::before {
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7' height='14' viewBox='0 0 7 14'%3E%3Cpath fill='%23fff' d='M6 11a1.371 1.371 0 011 1v1a1.371 1.371 0 01-1 1H1a1.371 1.371 0 01-1-1v-1a1.371 1.371 0 011-1h1V8H1a1.371 1.371 0 01-1-1V6a1.371 1.371 0 011-1h3a1.371 1.371 0 011 1v5h1zM3.5 0A1.5 1.5 0 112 1.5 1.5 1.5 0 013.5 0z'/%3E%3C/svg%3E") no-repeat center left;
   display: block;
   font-size: 1.8rem;
   text-indent: 15px;
