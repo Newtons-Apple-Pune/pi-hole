@@ -1,24 +1,24 @@
 <!-- markdownlint-configure-file { "MD004": { "style": "consistent" } } -->
 <!-- markdownlint-disable MD033 -->
 <p align="center">
-    <a href="https://pi-hole.net/">
-        <img src="https://pi-hole.github.io/graphics/Vortex/Vortex_with_Wordmark.svg" width="150" height="260" alt="Pi-hole">
+    <!-- <a href="#">
+        <img src="#" width="150" height="260" alt="N.A.T.A.S.H.A">
     </a>
-    <br>
-    <strong>Network-wide ad blocking via your own Linux hardware</strong>
+    <br> -->
+    <strong>Newton's Apple Threat Analysis and Secure Home Assistant</strong>
 </p>
 <!-- markdownlint-enable MD033 -->
 
 #
 
-The Pi-hole® is a [DNS sinkhole](https://en.wikipedia.org/wiki/DNS_Sinkhole) that protects your devices from unwanted content, without installing any client-side software.
+N.A.T.A.S.H.A is a [DNS sinkhole](https://en.wikipedia.org/wiki/DNS_Sinkhole) that protects your devices from unwanted content, without installing any client-side software.
 
 - **Easy-to-install**: our versatile installer walks you through the process, and takes less than ten minutes
 - **Resolute**: content is blocked in _non-browser locations_, such as ad-laden mobile apps and smart TVs
 - **Responsive**: seamlessly speeds up the feel of everyday browsing by caching DNS queries
 - **Lightweight**: runs smoothly with [minimal hardware and software requirements](https://docs.pi-hole.net/main/prerequisites/)
 - **Robust**: a command line interface that is quality assured for interoperability
-- **Insightful**: a beautiful responsive Web Interface dashboard to view and control your Pi-hole
+- **Insightful**: a beautiful responsive Web Interface dashboard to view and control N.A.T.A.S.H.A
 - **Versatile**: can optionally function as a [DHCP server](https://discourse.pi-hole.net/t/how-do-i-use-pi-holes-built-in-dhcp-server-and-why-would-i-want-to/3026), ensuring *all* your devices are protected automatically
 - **Scalable**: [capable of handling hundreds of millions of queries](https://pi-hole.net/2017/05/24/how-much-traffic-can-pi-hole-handle/) when installed on server-grade hardware
 - **Modern**: blocks ads over both IPv4 and IPv6
@@ -26,44 +26,43 @@ The Pi-hole® is a [DNS sinkhole](https://en.wikipedia.org/wiki/DNS_Sinkhole) th
 
 -----
 
-Master [![Build Status](https://travis-ci.com/pi-hole/pi-hole.svg?branch=master)](https://travis-ci.com/pi-hole/pi-hole) Development [![Build Status](https://travis-ci.com/pi-hole/pi-hole.svg?branch=development)](https://travis-ci.com/pi-hole/pi-hole)
+<!-- Master [![Build Status](https://travis-ci.com/pi-hole/pi-hole.svg?branch=master)](https://travis-ci.com/pi-hole/pi-hole) Development [![Build Status](https://travis-ci.com/pi-hole/pi-hole.svg?branch=development)](https://travis-ci.com/pi-hole/pi-hole) -->
 
-## One-Step Automated Install
+## Automated Install
 
-Those who want to get started quickly and conveniently may install Pi-hole using the following command:
-
+Those who want to get started quickly and conveniently may install N.A.T.A.S.H.A using the following command:
+<!-- 
 ### `curl -sSL https://install.pi-hole.net | bash`
 
 ## Alternative Install Methods
 
-Piping to `bash` is [controversial](https://pi-hole.net/2016/07/25/curling-and-piping-to-bash), as it prevents you from [reading code that is about to run](https://github.com/pi-hole/pi-hole/blob/master/automated%20install/basic-install.sh) on your system. Therefore, we provide these alternative installation methods which allow code review before installation:
-
-### Method 1: Clone our repository and run
+Piping to `bash` is [controversial](https://pi-hole.net/2016/07/25/curling-and-piping-to-bash), as it prevents you from [reading code that is about to run](https://github.com/pi-hole/pi-hole/blob/master/automated%20install/basic-install.sh) on your system. Therefore, we provide these alternative installation methods which allow code review before installation: -->
+<!-- 
+### Method 1: Clone our repository and run -->
 
 ```bash
-git clone --depth 1 https://github.com/pi-hole/pi-hole.git Pi-hole
-cd "Pi-hole/automated install/"
+git clone --depth 1 https://github.com/Newtons-Apple-Pune/N.A.T.A.S.H.A.git N.A.T.A.S.H.A
+cd "N.A.T.A.S.H.A/automated install/"
 sudo bash basic-install.sh
 ```
-
+<!-- 
 ### Method 2: Manually download the installer and run
 
 ```bash
 wget -O basic-install.sh https://install.pi-hole.net
-sudo bash basic-install.sh
+sudo bash basic-install.sh 
 ```
+-->
 
-## [Post-install: Make your network take advantage of Pi-hole](https://docs.pi-hole.net/main/post-install/)
+## Post-install: Make your network take advantage of N.A.T.A.S.H.A
 
-Once the installer has been run, you will need to [configure your router to have **DHCP clients use Pi-hole as their DNS server**](https://discourse.pi-hole.net/t/how-do-i-configure-my-devices-to-use-pi-hole-as-their-dns-server/245) which ensures that all devices connecting to your network will have content blocked without any further intervention.
+Once the installer has been run, you will need to configure your router to have **DHCP clients use N.A.T.A.S.H.A as their DNS server** which ensures that all devices connecting to your network will have content blocked without any further intervention.
 
-If your router does not support setting the DNS server, you can [use Pi-hole's built-in DHCP server](https://discourse.pi-hole.net/t/how-do-i-use-pi-holes-built-in-dhcp-server-and-why-would-i-want-to/3026); just be sure to disable DHCP on your router first (if it has that feature available).
+If your router does not support setting the DNS server, you can use N.A.T.A.S.H.A's built-in DHCP server; just be sure to disable DHCP on your router first (if it has that feature available).
 
-As a last resort, you can always manually set each device to use Pi-hole as their DNS server.
+As a last resort, you can always manually set each device to use N.A.T.A.S.H.A as their DNS server.
 
------
-
-## Pi-hole is free, but powered by your support
+<!-- ## Pi-hole is free, but powered by your support
 
 There are many reoccurring costs involved with maintaining free, open source, and privacy-respecting software; expenses which [our volunteer developers](https://github.com/orgs/pi-hole/people) pitch in to cover out-of-pocket. This is just one example of how strongly we feel about our software, as well as the importance of keeping it maintained.
 
@@ -100,9 +99,9 @@ While we are primarily reachable on our [Discourse User Forum](https://discourse
 - [Frequently Asked Questions](https://discourse.pi-hole.net/c/faqs)
 - [Feature Requests](https://discourse.pi-hole.net/c/feature-requests?order=votes)
 - [Reddit](https://www.reddit.com/r/pihole/)
-- [Twitter](https://twitter.com/The_Pi_hole)
+- [Twitter](https://twitter.com/The_Pi_hole) -->
 
------
+<!-- -----
 
 ## Breakdown of Features
 
@@ -162,4 +161,4 @@ Some of the statistics you can integrate include:
 - Queries cached
 - Unique clients
 
-The API can be accessed via [`telnet`](https://github.com/pi-hole/FTL), the Web (`admin/api.php`) and Command Line (`pihole -c -j`). You can find out [more details over here](https://discourse.pi-hole.net/t/pi-hole-api/1863).
+The API can be accessed via [`telnet`](https://github.com/pi-hole/FTL), the Web (`admin/api.php`) and Command Line (`pihole -c -j`). You can find out [more details over here](https://discourse.pi-hole.net/t/pi-hole-api/1863). -->
